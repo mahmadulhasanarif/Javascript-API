@@ -23,7 +23,7 @@ const makeRequest = (method, url, data) =>{
 const getData = () =>{
     makeRequest("GET", "https://jsonplaceholder.typicode.com/posts");
 }
-
+getData();
 const sendData = () =>{
     makeRequest("POST", "https://jsonplaceholder.typicode.com/posts",
     {
@@ -51,6 +51,3 @@ const updateAllData =() =>{
 const deleteData = () =>{
     makeRequest("DELETE", "https://jsonplaceholder.typicode.com/posts/1");
 }
-
-getData();
-deleteData();
